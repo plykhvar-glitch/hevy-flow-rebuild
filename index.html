@@ -198,13 +198,12 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .scr-tour .scr-body{display:flex;flex-direction:column;align-items:center;padding:0 22px}
 .scr-tour h1{font-size:25px;line-height:1.2;font-weight:700;text-align:center;margin-top:34px}
 .scr-tour .sub{font-size:14px;line-height:1.4;color:var(--hv-muted);text-align:center;margin-top:8px;min-height:40px}
-.scr-tcard{width:270px;height:300px;margin-top:22px;border-radius:30px 30px 0 0;border:7px solid #F1F2F5;border-bottom:0;position:relative;overflow:hidden;background:var(--hv-bg)}
-.scr-tcard::after{content:'';position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(rgba(255,255,255,0),var(--hv-bg))}
+.scr-tcard{width:270px;height:352px;margin-top:22px;border-radius:30px;border:7px solid #F1F2F5;position:relative;overflow:hidden;background:var(--hv-bg);flex:none}
 .scr-tc{position:absolute;inset:0;padding:16px 14px;opacity:0;transition:opacity .35s}
 .scr-tc.on{opacity:1}
 .scr-ex{display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;color:var(--hv-blue)}
 .scr-ex i{width:26px;height:26px;border-radius:50%;background:var(--hv-sec);display:grid;place-items:center;font-style:normal;font-size:13px}
-.scr-tc .note{font-size:11px;color:var(--hv-muted);margin:8px 0 2px}
+.scr-tc .scr-note{font-size:11px;color:var(--hv-muted);margin:8px 0 2px}
 .scr-tc .rest{font-size:11px;color:var(--hv-blue);margin-bottom:8px}
 .scr-sets{width:100%;border-collapse:collapse;font-size:12px}
 .scr-sets th{font-size:9.5px;font-weight:600;color:var(--hv-muted);text-align:center;padding:4px 0;letter-spacing:.04em}
@@ -329,7 +328,6 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 .phone-in.dark{--hv-bg:#000000;--hv-ink:#FFFFFF;--hv-ink2:#D1D1D6;--hv-muted:#8E8E93;--hv-line:#2C2C2E;--hv-hair:#1C1C1E;--hv-sec:#1C1C1E;--hv-greenrow:#1F4A1F;background:#000}
 .phone-in.dark .scr-sso,.phone-in.dark .scr-big{background:#F4F6FA}
 .phone-in.dark .scr-tcard{border-color:#1C1C1E}
-.phone-in.dark .scr-tcard::after{background:linear-gradient(rgba(0,0,0,0),#000)}
 .phone-in.dark .scr-sets .ck{background:#2C2C2E}
 .phone-in.dark .scr-sets td.pv{color:#636366}
 .phone-in.dark .scr-follow .ln{background:#1C1C1E}
@@ -504,7 +502,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
             <div class="scr-tcard">
               <div class="scr-tc on" data-p="0">
                 <div class="scr-ex"><i>🏋️</i>Bench Press (Barbell)</div>
-                <div class="note" data-t="feel"></div><div class="rest">⏱ <span data-t="rest"></span>: 2min 30s</div>
+                <div class="scr-note" data-t="feel"></div><div class="rest">⏱ <span data-t="rest"></span>: 2min 30s</div>
                 <table class="scr-sets"><thead><tr><th data-t="set"></th><th data-t="prev"></th><th id="thW"></th><th data-t="reps"></th><th>✓</th></tr></thead><tbody id="setRows"></tbody></table>
               </div>
               <div class="scr-tc" data-p="1">
