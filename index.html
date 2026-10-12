@@ -120,6 +120,81 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 @media(max-width:1080px){.qr{display:none}}
 .foot{border-top:1px solid var(--hair);padding:36px 0 70px;font-size:12.5px;line-height:1.6;color:var(--ink3)}
 
+
+/* ============ premium overview ============ */
+.hx{position:relative;overflow:hidden;background:#fff}
+.hx-glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(48% 60% at 78% 34%,rgba(13,147,248,.16),transparent 70%),radial-gradient(30% 40% at 6% 10%,rgba(13,147,248,.08),transparent 70%)}
+.hx-in{position:relative;display:grid;grid-template-columns:1.12fr .88fr;gap:20px;align-items:center;min-height:680px;padding-top:64px;padding-bottom:110px}
+.hx-for{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--hair2);border-radius:999px;padding:5px 14px 5px 5px;font-size:13px;font-weight:600;box-shadow:0 6px 20px -12px rgba(17,17,20,.3)}
+.hx-for img{width:26px;height:26px;border-radius:7px}
+.hx-for i{width:4px;height:4px;border-radius:50%;background:var(--ink3)}
+.hx-for em{font-style:normal;color:var(--accent-lift);letter-spacing:.06em;text-transform:uppercase;font-size:11.5px;font-weight:700}
+.hx-h{font-size:164px;line-height:.82;margin:26px 0 12px;letter-spacing:-.01em}
+.hx-tag{font-size:40px;line-height:.98;color:var(--ink)}
+.hx-tag i{display:block;font-style:normal}
+.hx-tag span{color:var(--accent)}
+.hx-lede{font-size:19px;line-height:1.55;color:var(--ink2);max-width:520px;margin-top:22px}
+.hx-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.btn.big{height:56px;padding:0 22px;font-size:16px;border-radius:14px;white-space:nowrap}
+.btn.ghost .pl{width:26px;height:26px;border-radius:50%;background:var(--ink);display:grid;place-items:center;margin-left:-8px}
+.hx-built{margin-top:34px}
+.hx-built .k{font-size:10.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3);margin-bottom:10px}
+.hx-built .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.hx-built .ch{display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 14px;border-radius:12px;background:var(--hv-sec);border:1px solid var(--hair);font-size:13.5px;color:var(--ink2)}
+.hx-built .ch b{color:var(--ink);font-size:15px}
+.hx-built .ch b em{font-style:normal;color:var(--hv-gold)}
+.hx-built .ch.awl{padding:0 10px;background:#fff}
+.hx-built .ch.awl img{height:30px}
+.hx-meta{margin-top:20px;font-size:12.5px;color:var(--ink3)}
+.hx-meta b{color:var(--ink2)}
+.hx-r{position:relative;height:610px}
+.hx-r .ph{position:absolute;width:255px;border-radius:26px;box-shadow:0 40px 70px -30px rgba(17,17,20,.45),0 0 0 1px rgba(17,17,20,.06)}
+.hx-r .p2{left:50%;top:40px;transform:translateX(-50%);z-index:3;width:280px}
+.hx-r .p1{left:4%;top:110px;transform:rotate(-9deg);z-index:2;opacity:.96}
+.hx-r .p3{right:4%;top:110px;transform:rotate(9deg);z-index:2;opacity:.96}
+.hx-r .fl{position:absolute;z-index:4;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border:1px solid var(--hair);border-radius:16px;padding:12px 16px;box-shadow:0 18px 40px -18px rgba(17,17,20,.4)}
+.hx-r .fl b{display:block;font-family:Archivo,sans-serif;font-stretch:80%;font-weight:900;font-size:30px;line-height:1;color:var(--accent)}
+.hx-r .fl span{display:block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-top:4px}
+.hx-r .f1{left:0;top:40px}
+.hx-r .f2{right:0;bottom:70px}
+.hx-band{background:var(--band);padding:0 0 46px;position:relative}
+.hx-band::before{content:'';position:absolute;left:0;right:0;top:-1px;height:80px;background:linear-gradient(#fff,#fff) top/100% 0 no-repeat}
+.hx-band .stats{margin:0 auto;transform:translateY(-44px);max-width:860px}
+.hx-band .fb{color:#fff;margin-top:-14px}
+@media(max-width:1000px){.hx-in{grid-template-columns:1fr;min-height:0;padding-bottom:90px}.hx-r{height:440px}.hx-r .ph{width:200px}.hx-r .p2{width:220px}.hx-h{font-size:110px}.hx-band{margin-top:0;padding-top:60px}}
+@media(max-width:600px){.hx-r{display:none}.hx-h{font-size:88px}.hx-tag{font-size:28px}.hx-in{padding-top:40px}}
+.idea{position:relative;grid-template-columns:76px 1fr 200px;overflow:hidden}
+.idea::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);opacity:0;transition:opacity .15s}
+.idea:hover::before{opacity:1}
+.idea .no{width:auto;height:auto;background:none;color:var(--accent);font-size:54px;line-height:.85;border-radius:0}
+.idea .out b{display:inline-block;background:rgba(13,147,248,.1);color:var(--accent-ink);padding:7px 12px;border-radius:10px;font-size:17px}
+.idea.top{background:linear-gradient(135deg,#0D93F8,#1D6FE0);border-color:transparent;color:#fff;box-shadow:0 24px 50px -26px rgba(13,147,248,.9)}
+.idea.top .no{color:#fff}
+.idea.top p{color:rgba(255,255,255,.9)}
+.idea.top .seeit{color:#fff}
+.idea.top .out b{background:#fff;color:var(--accent-ink)}
+.idea.top .out span{color:rgba(255,255,255,.8)}
+.idea .tagtop{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:rgba(255,255,255,.2);border-radius:6px;padding:4px 8px;margin-bottom:10px}
+@media(max-width:780px){.idea{grid-template-columns:48px 1fr}.idea .no{font-size:38px}}
+.ob{background:var(--band);color:#fff;padding:84px 0;position:relative;overflow:hidden}
+.ob::after{content:'';position:absolute;right:-120px;top:-120px;width:480px;height:480px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.18),transparent)}
+.ob-in{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;position:relative;z-index:1}
+.ob .lab{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.ob h2{font-size:64px;line-height:.92;margin:14px 0 18px}
+.ob h2 span{color:#FFE21A}
+.ob p{font-size:17px;line-height:1.6;color:rgba(255,255,255,.9);max-width:520px}
+.ob-n{display:flex;gap:16px}
+.ob-n div{flex:1;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:26px 22px}
+.ob-n b{display:block;font-family:Archivo,sans-serif;font-stretch:80%;font-weight:900;font-size:84px;line-height:.9}
+.ob-n span{display:block;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.8);margin-top:10px}
+@media(max-width:900px){.ob-in{grid-template-columns:minmax(0,1fr)}.ob h2{font-size:44px}.ob-n b{font-size:60px}}
+@media(max-width:600px){.ob{padding:60px 0}.ob-n{gap:10px}.ob-n div{padding:18px 14px}.ob-n b{font-size:46px}.hx-for i,.hx-for em{display:none}.fin-in{flex-direction:column;align-items:flex-start}}
+.fin{padding:80px 0}
+.fin-in{display:flex;align-items:center;justify-content:space-between;gap:30px;background:#fff;border:1px solid var(--hair);border-radius:24px;padding:36px 40px;box-shadow:0 24px 50px -34px rgba(17,17,20,.4)}
+.fin h3{font-size:44px;line-height:.95}
+.fin p{font-size:16px;color:var(--ink2);margin:12px 0 22px;max-width:480px}
+@media(max-width:700px){.fin-in{padding:26px 22px}.fin h3{font-size:34px}}
+
 /* ============ prototype ============ */
 .stage{display:grid;grid-template-columns:minmax(470px,1fr) minmax(400px,520px);align-items:start;min-height:calc(100vh - 68px)}
 @media(max-width:1060px){.stage{grid-template-columns:minmax(0,1fr)}.panelcol{position:static!important;max-height:none!important;border-left:0!important;border-top:1px solid var(--hair)}}
@@ -377,29 +452,49 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
 
 <!-- ======================= OVERVIEW ======================= -->
 <div class="view on" id="view-over">
-<div class="hero">
-  <div class="phones" aria-hidden="true"><img src="img/as1.png" alt=""><img src="img/as2.png" alt=""></div>
-  <div class="wrap">
-  <div class="eyebrow">Growth Audit · October 2026</div>
-  <h1 class="cond">Hevy</h1>
-  <p class="lede">Five ideas to unlock more revenue from the athletes you already have.</p>
-  <div class="meta">Prepared by <b>Adapty</b> · based on your live iOS flow, hevyapp.com and your App Store listing</div>
-  <div class="herobtns">
-    <button class="btn blue" data-view="proto">Open the prototype <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-    <button class="btn ghost" id="heroDemo"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l12-7.5z"/></svg>Watch the 30-second walkthrough</button>
+<div class="hx">
+  <div class="hx-glow" aria-hidden="true"></div>
+  <div class="wrap hx-in">
+    <div class="hx-l">
+      <div class="hx-for"><img src="img/icon.png" alt=""><span>Growth Audit for the Hevy team</span><i></i><em>October 2026</em></div>
+      <h1 class="cond hx-h">Hevy</h1>
+      <div class="cond hx-tag"><i>Log workouts.</i><i>Get stronger.</i><i><span>Convert more.</span></i></div>
+      <p class="hx-lede">Five ideas to unlock more revenue from the athletes you already have, each rebuilt as a working screen in your own design.</p>
+      <div class="hx-btns">
+        <button class="btn blue big" data-view="proto">Open the prototype <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <button class="btn ghost big" id="heroDemo"><span class="pl"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M7 4.5v15l12-7.5z"/></svg></span>Watch the 30-sec walkthrough</button>
+      </div>
+      <div class="hx-built">
+        <div class="k">What you have already built</div>
+        <div class="row">
+          <span class="ch awl"><img src="img/awl-a.png" alt="Apps We Love"></span>
+          <span class="ch"><b><em>★</em> 4.9</b> 630,000+ ratings</span>
+          <span class="ch"><b>17M+</b> athletes</span>
+        </div>
+      </div>
+      <div class="hx-meta">Prepared by <b>Adapty</b> · based on your live iOS flow, hevyapp.com and your App Store listing</div>
+    </div>
+    <div class="hx-r" aria-hidden="true">
+      <img class="ph p1" src="img/as3.png" alt="">
+      <img class="ph p3" src="img/as4.png" alt="">
+      <img class="ph p2" src="img/as2.png" alt="">
+      <div class="fl f1"><b>up to +20%</b><span>CR to purchase</span></div>
+      <div class="fl f2"><b>up to +17%</b><span>ARPU</span></div>
+    </div>
   </div>
-  <div class="stats">
-    <div class="stat"><b>30,000+</b><span>apps run subscriptions<br>on Adapty</span></div>
-    <div class="stat"><b>5</b><span>ideas, each rebuilt<br>as a working screen</span></div>
-    <div class="stat"><b>0</b><span>design changes<br>to your art direction</span></div>
-  </div>
-  </div>
+  <div class="hx-band"><div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>30,000+</b><span>apps run subscriptions<br>on Adapty</span></div>
+      <div class="stat"><b>5</b><span>ideas, each rebuilt<br>as a working screen</span></div>
+      <div class="stat"><b>0</b><span>design changes<br>to your art direction</span></div>
+    </div>
+    <div class="fb">
+      <div class="fb-k">Built in Adapty Flow Builder</div>
+      <div class="fb-i"><span class="tick"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span><p><b>Millions of dollars</b> in subscription revenue pass through Flow Builder every month.</p></div>
+      <div class="fb-i"><span class="tick"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span><p><b>Nearly 500 apps</b> actively build their paywalls and onboarding in it — plenty of them past $100K MRR.</p></div>
+    </div>
+  </div></div>
 </div>
-<div class="fbwrap"><div class="wrap"><div class="fb">
-  <div class="fb-k">Built in Adapty Flow Builder</div>
-  <div class="fb-i"><span class="tick"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span><p><b>Millions of dollars</b> in subscription revenue pass through Flow Builder every month.</p></div>
-  <div class="fb-i"><span class="tick"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span><p><b>Nearly 500 apps</b> actively build their paywalls and onboarding in it — plenty of them past $100K MRR.</p></div>
-</div></div></div>
 
 <div class="sec"><div class="wrap">
   <div class="sec-k">What this is</div>
@@ -417,40 +512,41 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
   <h2>Five ideas, ranked by what we would <span>test first</span>.</h2>
   <p class="body">Each one opens the prototype on the screen that shows it.</p>
   <div class="ideas">
-    <button class="idea" data-go="offer"><span class="no">1</span><span>
+    <button class="idea top" data-go="offer"><span class="no">01</span><span><span class="tagtop">Start here · highest ARPU lever</span>
       <h3>Catch “Not now” with your $2.99 monthly plan</h3>
       <p>Not now and Skip close the paywall for good today. A second sheet now offers the monthly plan you already sell, with your own Free vs Pro table: a far smaller yes than $23.99 up front.</p>
       <span class="seeit">See the screen →</span></span>
       <span class="out"><b>ARPU +10–15%</b><span>from a second chance</span></span></button>
-    <button class="idea" data-go="carousel"><span class="no">2</span><span>
+    <button class="idea" data-go="carousel"><span class="no">02</span><span>
       <h3>Let them in before the sign-up</h3>
       <p>Step two is Sign up with Apple, Google or Email, before Hevy has shown one screen of the app. The carousel now ends in Get started, and the account is created after the paywall, to save what they just set up.</p>
       <span class="seeit">See the screen →</span></span>
       <span class="out"><b>CR +8% · ARPU +17%</b><span>from deferred sign-up</span></span></button>
-    <button class="idea" data-go="tour"><span class="no">3</span><span>
+    <button class="idea" data-go="tour"><span class="no">03</span><span>
       <h3>Show your tour before you ask for Pro</h3>
       <p>Welcome to Hevy, Measure progress and Join the community play after the paywall today, so Pro is offered to someone who has seen a form and a units screen. The tour now comes first, in their kg or lbs.</p>
       <span class="seeit">See the screen →</span></span>
       <span class="out"><b>CR +10–20%</b><span>to purchase</span></span></button>
-    <button class="idea" data-go="health"><span class="no">4</span><span>
+    <button class="idea" data-go="health"><span class="no">04</span><span>
       <h3>Ask for Health and notifications after the paywall</h3>
       <p>The notification prompt fires right after sign-up, and Apple Health comes right before the price: two system dialogs before Pro. Both now come after the paywall, on your own Apple Health screen.</p>
       <span class="seeit">See the screen →</span></span>
       <span class="out"><b>CR +10–15%</b><span>to purchase</span></span></button>
-    <button class="idea" data-go="paywall"><span class="no">5</span><span>
+    <button class="idea" data-go="paywall"><span class="no">05</span><span>
       <h3>Put Apps We Love and 630,000 ratings above the plans</h3>
       <p>“Featured by Apple” and your reviews sit below the button, under “What our users are saying”. Apps We Love and your 4.9 from 630,000+ ratings now sit right above the three plans.</p>
       <span class="seeit">See the screen →</span></span>
       <span class="out"><b>CR +10–15%</b><span>to purchase</span></span></button>
   </div>
-  <div class="band">
-    <div class="txt"><div class="lab">Potential outcome</div><p>Together, the five let a new lifter see Hevy before paying for it: no account wall, no system dialogs, the tour and your proof before the price, and a smaller second offer when they say not now.</p></div>
-    <div class="nums"><div><b>up to +20%</b><span>CR to purchase</span></div><div><b>up to +17%</b><span>ARPU</span></div></div>
-  </div>
-  <div class="cta-row">
-    <button class="btn blue" data-view="proto">Open the prototype <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-    <div class="qr"><img src="img/qr.svg" alt="QR code to the prototype"><div><b>Open it on your phone</b><span>Scan to try the flow in your hand.</span></div></div>
-  </div>
+</div></div>
+<div class="ob"><div class="wrap ob-in">
+  <div class="ob-t"><div class="lab">Potential outcome</div><h2 class="cond">Pro, earned <span>before</span> the price.</h2><p>Together, the five let a new lifter see Hevy before paying for it: no account wall, no system dialogs, the tour and your proof before the price, and a smaller second offer when they say not now.</p></div>
+  <div class="ob-n"><div><b>+20%</b><span>up to · CR to purchase</span></div><div><b>+17%</b><span>up to · ARPU</span></div></div>
+</div></div>
+<div class="fin"><div class="wrap fin-in">
+  <div><h3 class="cond">See it in your hand</h3><p>Seven screens, your design, every idea working. Light and dark, English, Spanish and Portuguese.</p>
+    <button class="btn blue big" data-view="proto">Open the prototype <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+  <div class="qr"><img src="img/qr.svg" alt="QR code to the prototype"><div><b>Open it on your phone</b><span>Scan to try the flow in your hand.</span></div></div>
 </div></div>
 <div class="foot"><div class="wrap">Impact ranges are Adapty’s expected effect from teardowns and A/B tests across subscription apps — not measured lift for Hevy. Every price, rating, quote and feature here comes from Hevy’s own in-app screens, hevyapp.com and its App Store listing.</div></div>
 </div><!-- /view-over -->
